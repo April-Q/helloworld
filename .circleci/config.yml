@@ -1,13 +1,70 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
-# Use a package of configuration called an orb.
-orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
-# Orchestrate or schedule a set of jobs
+
+jobs:
+  # Compile and test code.
+  compile_and_test:
+    docker:
+      - image: circleci/golang:1.14
+    steps:
+      - checkout
+      - run:
+          name: Compile code
+          command: |
+            go build main.go
+      - run:
+          name: Run unit tests
+          command: |
+            go test ./... -coverprofile cover.out
+  # Build and push docker image.
+  build_and_push:
+    environment:
+      DOCKER_REGISTRY: hub.docker.com
+      REPO_NAME: shujiangdocker/helloworld
+    docker:
+      - image: circleci/buildpack-deps:stretch
+        auth:
+          username: shujiangdocker
+          password: $DOCKER_PASSWORD 
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: |
+            docker build -t $REPO_NAME:$CIRCLE_TAG .
+      - run:
+          name: Docker login
+          command: |
+            echo "$DOCKER_PASSWORD" | docker login $DOCKER_REGISTRY -u $DOCKER_USERNAME --password-stdin
+      - run:
+          name: Push Docker image
+          command: |
+            docker push $REPO_NAME:$CIRCLE_TAG
+
 workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+  version: 2
+  # Build workflow is triggered on pull request event.
+  # This project is configured to only run builds that have open pull requests associated with them.
+  build:
     jobs:
-      - welcome/run
+      - compile_and_test:
+          filters:
+            branches:
+              ignore: master
+  # Release workflow is triggered on tag event.
+  release:
+    jobs:
+      - compile_and_test:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
+      - build_and_push:
+          requires:
+            - compile_and_test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
