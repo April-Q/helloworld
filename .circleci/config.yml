@@ -33,6 +33,10 @@ jobs:
           command: |
             docker build -t $REPO_NAME:$CIRCLE_TAG .
       - run:
+          name: Docker login
+          command: |
+            docker login -u shujiangdocker -p sj123456
+      - run:
           name: Push Docker image
           command: |
             docker push $REPO_NAME:$CIRCLE_TAG
