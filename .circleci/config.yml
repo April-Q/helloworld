@@ -1,70 +1,33 @@
-version: 2.1
-
+version: 2
 jobs:
-  # Compile and test code.
-  compile_and_test:
-    docker:
-      - image: circleci/golang:1.14
-    steps:
-      - checkout
-      - run:
-          name: Compile code
-          command: |
-            go build main.go
-      - run:
-          name: Run unit tests
-          command: |
-            go test ./... -coverprofile cover.out
-  # Build and push docker image.
-  build_and_push:
-    environment:
-      DOCKER_REGISTRY: hub.docker.com
-      REPO_NAME: shujiangdocker/helloworld
-    docker:
-      - image: circleci/buildpack-deps:stretch
-        auth:
-          username: shujiangdocker
-          password: $DOCKER_PASSWORD 
-    steps:
-      - checkout
-      - setup_remote_docker
-      - run:
-          name: Build Docker image
-          command: |
-            docker build -t $REPO_NAME:$CIRCLE_TAG .
-      - run:
-          name: Docker login
-          command: |
-            docker login -u shujiangdocker -p sj123456
-      - run:
-          name: Push Docker image
-          command: |
-            docker push $REPO_NAME:$CIRCLE_TAG
-
-workflows:
-  version: 2
-  # Build workflow is triggered on pull request event.
-  # This project is configured to only run builds that have open pull requests associated with them.
   build:
-    jobs:
-      - compile_and_test:
-          filters:
-            branches:
-              ignore: master
-  # Release workflow is triggered on tag event.
-  release:
-    jobs:
-      - compile_and_test:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v.*/
-      - build_and_push:
-          requires:
-            - compile_and_test
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v.*/
+    machine: true
+    environment:
+      KIND_VERSION: "v0.7.0"
+      KUBECTL_VERSION: "v1.17.0"
+    steps:
+    - checkout
+    - run:
+        name: install kind
+        command: |
+          curl -LO https://github.com/kubernetes-sigs/kind/releases/download/$KIND_VERSION/kind-Linux-amd64
+          chmod +x kind-Linux-amd64
+          sudo mv kind-Linux-amd64 /usr/local/bin/kind
+    - run:
+        name: create cluster
+        command: |
+          if kind create cluster; then
+            echo "Cluster created"
+          else
+            echo "Cluster creation failed, retrying"
+            kind delete cluster || true
+            kind create cluster
+          fi
+    - run:
+        name: install kubectl
+        command: |
+          curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBECTL_VERSION/bin/linux/amd64/kubectl
+          chmod +x ./kubectl
+          sudo mv ./kubectl /usr/local/bin/kubectl
+          echo "export KUBECONFIG=$(kind get kubeconfig)" >> $BASH_ENV
+        
