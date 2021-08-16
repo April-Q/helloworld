@@ -1,11 +1,176 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T03:16:47.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="Z3n2wzp22igSrPXjA5KW" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-16T03:37:09.669Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="Yt7Z8E5MmL2A3HyldDvW" version="14.9.6" type="github">
   <diagram id="WFRDdXCMDlvXfphaU29e" name="Page-1">
-    <mxGraphModel dx="859" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2763" dy="951" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q76ixRkjY5-5VGIcRmQS-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="180" y="230" width="80" height="80" as="geometry" />
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="510" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-34" value="" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-2" target="GFlD6Gr8_TYosMnyprnE-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="152.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-2" value="Grafana" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="255" y="120" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-3" target="GFlD6Gr8_TYosMnyprnE-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-3" target="GFlD6Gr8_TYosMnyprnE-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="197.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="197" />
+              <mxPoint x="470" y="157" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-3" target="GFlD6Gr8_TYosMnyprnE-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="197" />
+              <mxPoint x="470" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-3" target="GFlD6Gr8_TYosMnyprnE-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="197" />
+              <mxPoint x="470" y="218" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-3" target="GFlD6Gr8_TYosMnyprnE-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="197" />
+              <mxPoint x="470" y="278" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-3" value="Prometheus" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="255" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-4" target="GFlD6Gr8_TYosMnyprnE-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-4" value="Webhook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="20" y="410" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-5" target="GFlD6Gr8_TYosMnyprnE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-5" target="GFlD6Gr8_TYosMnyprnE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-5" value="AlertManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="255" y="240" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-22" value="通知中心" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="410" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-24" value="ETCD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="80" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-25" value="Controller Manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-26" value="APIServer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="200" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-27" value="Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="260" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-37" value="Manager Node" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="80" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-43" value="Kubernetes Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="50" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-44" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="400" width="510" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-45" value="" style="whiteSpace=wrap;html=1;aspect=fixed;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="440" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-47" target="GFlD6Gr8_TYosMnyprnE-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="512.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-47" value="Grafana" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="255" y="480" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-53" target="GFlD6Gr8_TYosMnyprnE-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-53" target="GFlD6Gr8_TYosMnyprnE-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="557.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="557" />
+              <mxPoint x="470" y="517" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-53" target="GFlD6Gr8_TYosMnyprnE-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="557" />
+              <mxPoint x="470" y="458" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-53" target="GFlD6Gr8_TYosMnyprnE-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="557" />
+              <mxPoint x="470" y="578" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-53" target="GFlD6Gr8_TYosMnyprnE-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="557" />
+              <mxPoint x="470" y="638" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-53" value="Prometheus" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="255" y="540" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GFlD6Gr8_TYosMnyprnE-54" target="GFlD6Gr8_TYosMnyprnE-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-54" value="AlertManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="255" y="600" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-55" value="ETCD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="440" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-56" value="Controller Manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="500" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-57" value="APIServer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="560" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-58" value="Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="620" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-59" value="Manager Node" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFlD6Gr8_TYosMnyprnE-60" value="Kubernetes Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="410" width="260" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
